@@ -67,9 +67,6 @@ class Concrete5 extends \Slim\Middleware
         /* Prevents dispatcher from causing redirection to the base_url */
         define('REDIRECT_TO_BASE_URL', false);
         
-        /* Define relative dir to nothing */
-        define('DIR_REL', '');
-        
         /* Include the C5 dispatcher - this is where the magic happens */
         @include(DIR_BASE . '/concrete/dispatcher.php');
         
